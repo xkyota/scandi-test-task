@@ -1,0 +1,129 @@
+/* * Header part */
+
+.header {
+	padding: 20px;
+	padding-top: 50px;
+
+	border-bottom: 3px solid black;
+}
+
+.container {
+	width: 1600px;
+	margin: 0 auto;
+}
+
+header > .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: bold;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	font-size: 32px;
+}
+
+.header-list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+/*! ============ From universe.io (start) ============ */
+
+.header-list button {
+	font-family: inherit;
+	border: none;
+	outline: 1px dotted rgb(37, 37, 37);
+	outline-offset: -4px;
+	cursor: pointer;
+	background: hsl(0deg 0% 75%);
+	box-shadow: inset -1px -1px #292929, inset 1px 1px #fff,
+		inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 5px 30px;
+}
+
+.header-list button:active {
+	box-shadow: inset -1px -1px #fff, inset 1px 1px #292929,
+		inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+}
+
+/*! ============ From universe.io (end) ============ */
+
+.product-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.product-list li {
+	position: relative;
+	border: 3px solid #000;
+	border-radius: 4px;
+	padding: 40px;
+	width: 250px;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.delete-checkbox {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	transform: scale(1.2);
+}
+
+.product-list .model,
+.product-list .name,
+.product-list .price,
+.product-list .size {
+	display: block;
+	text-align: center;
+	margin-top: 4px;
+}
+
+/* * Main part */
+
+main {
+	margin: 0 auto;
+	width: 1600px;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 70px;
+	padding: 0;
+	list-style: none;
+}
+
+/* * Footer part */
+
+footer {
+	width: 100%;
+	padding: 20px;
+	padding-top: 50px;
+
+	border-top: 3px solid black;
+}
+
+footer > p {
+	text-align: center;
+	font-weight: bold;
+}
