@@ -75,12 +75,49 @@ header > .container {
 	box-sizing: border-box;
 }
 
-.delete-checkbox {
+.delete-checkbox, .loader {
 	position: absolute;
 	top: 8px;
 	left: 8px;
 	transform: scale(1.2);
 }
+
+/*! ============ From universe.io (start) ============ */
+
+.loader {
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-left-color: transparent;
+	border-radius: 50%;
+}
+
+.loader {
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-left-color: transparent;
+	width: 18px;
+	height: 18px;
+}
+
+.loader {
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-left-color: transparent;
+	width: 18px;
+	height: 18px;
+	animation: spin89345 1s linear infinite;
+
+	display: none;
+}
+
+@keyframes spin89345 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*! ============ From universe.io (end) ============ */
 
 .product-list .model,
 .product-list .type,
@@ -127,3 +164,62 @@ footer > p {
 	text-align: center;
 	font-weight: bold;
 }
+
+/** Main Add Product Page */
+
+#product-form {
+	margin-left: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	flex-direction: column;
+
+	width: 800px;
+	gap: 20px;
+}
+
+.info-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+
+	gap: 20px;
+}
+
+.main-addproduct {
+	display: block;
+}
+
+.type-switcher {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	gap: 20px;
+
+	padding-bottom: 40px;
+}
+
+.form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 15px;
+
+	outline: 2px solid black;
+
+	max-width: 400px;
+	padding: 20px;
+}
+
+.input > input {
+	width: 150px;
+	padding: 0;
+	margin: 0;
+
+	outline: 1.5px solid black;
+}
+

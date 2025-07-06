@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Test Task Scandi</title>
 
+		<!-- Reset Styles Files -->
+		<link rel="stylesheet" href="reset.css" />
+
 		<!-- Modern Normalize  -->
 		<link
 			rel="stylesheet"
@@ -23,7 +26,6 @@
 		/>
 
 		<!-- Styles -->
-		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -33,22 +35,86 @@
 
 				<ul class="header-list">
 					<li class="header-list__item">
-						<button id="delete-product-btn">Add</button>
+						<button id="delete-product-btn">Mass Delete</button>
 					</li>
 					<li class="header-list__item">
-						<button id="delete-product-btn">Mass Delete</button>
+						<button onclick="backButton()" id="back">Back</button>
 					</li>
 				</ul>
 			</div>
 		</header>
 
-		<main>
-			
+		<main class="main-addproduct">
+			<div class="container">
+				<div id="product-form">
+					<ul class="info-list">
+						<il class="info-item">
+							<label for="sku">SKU</label>
+							<input id="sku" type="text" name="sku" />
+						</il>
+						<il class="info-item">
+							<label for="name">NAME</label>
+							<input id="name" type="text" name="name" />
+						</il>
+						<il class="info-item">
+							<label for="price">Price $</label>
+							<input id="price" type="number" name="price" />
+						</il>
+					</ul>
+
+					<div class="type-switcher">
+						<span>Type Switcher</span>
+						<select class="form-select" id="productType">
+							<option selected disabled>Type Switcher</option>
+							<option value="DVD">DVD</option>
+							<option value="Furniture">Furniture</option>
+							<option value="Book">Book</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form" id="dvd-form" style="display: none;">
+					<p>The Selected option has an id #DVD</p>
+
+					<div class="input">
+						<label for="size">Size (MB)</label>
+						<input id="size" type="number" name="size" />
+					</div>
+				</div>
+
+				<div class="form" id="furniture-form" style="display: none;">
+					<p>The Selected option has an id #Furniture</p>
+
+					<div class="input">
+						<label for="height">Height (CM)</label>
+						<input id="height" type="number" name="height" />
+					</div>
+
+					<div class="input">
+						<label for="width">Width (CM)</label>
+						<input id="width" type="number" name="width" />
+					</div>
+
+					<div class="input">
+						<label for="length">Length (CM)</label>
+						<input id="length" type="number" name="length" />
+					</div>
+				</div>
+
+				<div class="form" id="book-form" style="display: none;">
+					<p>The Selected option has an id #Book</p>
+
+					<div class="input">
+						<label for="weight">Weight (KG)</label>
+						<input id="weight" type="number" name="weight" />
+					</div>
+				</div>
+			</div>
 		</main>
 
-        <footer>
-            <p>ScandiWeb Test assignment</p>
-        </footer>
+		<footer>
+			<p>ScandiWeb Test assignment</p>
+		</footer>
 
 		<script src="/script.js"></script>
 	</body>
