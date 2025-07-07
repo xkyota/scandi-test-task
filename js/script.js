@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function addProduct() {
-	window.location.href = "/addproduct.html";
+	window.location.href = "/pages/addproduct.html";
 }
 
 function backButton() {
