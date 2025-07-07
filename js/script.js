@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			<li>
 				<input type="checkbox" name="checkbox" class="delete-checkbox" />
 				<div class="loader"></div>
-				<span class="model">JVSC12312321</span>
+				<span class="model">ID: ${index + 1}</span>
 				<span class="type">ACME DISC</span>
 				<span class="price">1.00$</span>
 				<span class="addon">Size: 700MB</span>
